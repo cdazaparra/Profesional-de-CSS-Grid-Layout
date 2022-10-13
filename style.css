@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --primary-black: #212121;
+    --secondary-black: #757575;
+    --primary-gray:#9e9e9e;
+    --secondary-gray: #bdbdbd;
+    --primary-blue: #1976d2;
+    --secondary-blue: #2196f3;
+    --primary-light: #bbdefb;
+    --secondary-light: #ffffff;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to top, #212121, #757575, #9e9e9e, #bdbdbd, #bbdefb);
+    margin: 0;
+    height: 100vh;
+    color: var(--secondary-light);
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    height: 100vh;
+}
+
+.item-1 {
+    background: var(--primary-blue);
+    grid-column: 1 / 2;
+    grid-row: 5 / 10;
+}
+
+.item-2 {
+    background: var(--primary-light);
+    border-radius: 0 20px 20px 0;
+    grid-column: 1 / 4;
+    grid-row: 7 / 9;
+    opacity: 50%;
+}
+
+.item-3 {
+    background: var(--secondary-blue);
+    border-radius: 20px 20px 0 0;
+    grid-column: 5 / 8;
+    grid-row: 6 / 11;
+}
+
+.item-4 {
+    border: 4px solid var(--secondary-blue);
+    border-radius: 20px;
+    grid-column: 6 / 9;
+    grid-row: 5 / 8;
+}
+
+.item-5 {
+    border-radius: 20px;
+    border: 4px solid var(--secondary-blue);
+    grid-column: 7 / 10;
+    grid-row: 3 / 9;
+}
+
+.item-6 {
+    font-size: 40px;
+    grid-column: 6 / 9;
+    grid-row: 3 / 5;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.items-6 p {
+    margin: 0 auto;
+    margin-left: 50px;    
+    padding-left: 50px;
+}
+
+.item-7 {
+    background: var(--secondary-blue);
+    border-radius: 0 20px;
+    grid-column: 3 / 4; 
+    grid-row: 3 / 4; 
+}
+
+.item-8 {
+    font-size: 20px;
+    display: grid;
+    grid-column-start: 4;
+    grid-row: 2 / 4;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    justify-items: center;
+    align-items: center;
+    
+}
+.item-8 img{
+    width: 150px;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
